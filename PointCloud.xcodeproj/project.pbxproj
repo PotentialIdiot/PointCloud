@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB9E8CEF21E610B100D5DD03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9E8CEE21E610B100D5DD03 /* AppDelegate.swift */; };
+		EB9E8CF121E610B100D5DD03 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9E8CF021E610B100D5DD03 /* art.scnassets */; };
+		EB9E8CF321E610B100D5DD03 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9E8CF221E610B100D5DD03 /* GameViewController.swift */; };
+		EB9E8CF621E610B100D5DD03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9E8CF421E610B100D5DD03 /* Main.storyboard */; };
+		EB9E8CF821E610B200D5DD03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9E8CF721E610B200D5DD03 /* Assets.xcassets */; };
+		EB9E8CFB21E610B200D5DD03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9E8CF921E610B200D5DD03 /* LaunchScreen.storyboard */; };
+		EB9E8D0621E610B300D5DD03 /* PointCloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9E8D0521E610B300D5DD03 /* PointCloudTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB9E8D0221E610B300D5DD03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB9E8CE321E610B100D5DD03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB9E8CEA21E610B100D5DD03;
+			remoteInfo = PointCloud;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB9E8CEB21E610B100D5DD03 /* PointCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PointCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9E8CEE21E610B100D5DD03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB9E8CF021E610B100D5DD03 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		EB9E8CF221E610B100D5DD03 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		EB9E8CF521E610B100D5DD03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB9E8CF721E610B200D5DD03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB9E8CFA21E610B200D5DD03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB9E8CFC21E610B200D5DD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9E8D0121E610B300D5DD03 /* PointCloudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PointCloudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9E8D0521E610B300D5DD03 /* PointCloudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCloudTests.swift; sourceTree = "<group>"; };
+		EB9E8D0721E610B300D5DD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB9E8CE821E610B100D5DD03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9E8CFE21E610B300D5DD03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB9E8CE221E610B100D5DD03 = {
+			isa = PBXGroup;
+			children = (
+				EB9E8CED21E610B100D5DD03 /* PointCloud */,
+				EB9E8D0421E610B300D5DD03 /* PointCloudTests */,
+				EB9E8CEC21E610B100D5DD03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB9E8CEC21E610B100D5DD03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB9E8CEB21E610B100D5DD03 /* PointCloud.app */,
+				EB9E8D0121E610B300D5DD03 /* PointCloudTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB9E8CED21E610B100D5DD03 /* PointCloud */ = {
+			isa = PBXGroup;
+			children = (
+				EB9E8CEE21E610B100D5DD03 /* AppDelegate.swift */,
+				EB9E8CF021E610B100D5DD03 /* art.scnassets */,
+				EB9E8CF221E610B100D5DD03 /* GameViewController.swift */,
+				EB9E8CF421E610B100D5DD03 /* Main.storyboard */,
+				EB9E8CF721E610B200D5DD03 /* Assets.xcassets */,
+				EB9E8CF921E610B200D5DD03 /* LaunchScreen.storyboard */,
+				EB9E8CFC21E610B200D5DD03 /* Info.plist */,
+			);
+			path = PointCloud;
+			sourceTree = "<group>";
+		};
+		EB9E8D0421E610B300D5DD03 /* PointCloudTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB9E8D0521E610B300D5DD03 /* PointCloudTests.swift */,
+				EB9E8D0721E610B300D5DD03 /* Info.plist */,
+			);
+			path = PointCloudTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB9E8CEA21E610B100D5DD03 /* PointCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB9E8D0A21E610B300D5DD03 /* Build configuration list for PBXNativeTarget "PointCloud" */;
+			buildPhases = (
+				EB9E8CE721E610B100D5DD03 /* Sources */,
+				EB9E8CE821E610B100D5DD03 /* Frameworks */,
+				EB9E8CE921E610B100D5DD03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PointCloud;
+			productName = PointCloud;
+			productReference = EB9E8CEB21E610B100D5DD03 /* PointCloud.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB9E8D0021E610B300D5DD03 /* PointCloudTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB9E8D0D21E610B300D5DD03 /* Build configuration list for PBXNativeTarget "PointCloudTests" */;
+			buildPhases = (
+				EB9E8CFD21E610B300D5DD03 /* Sources */,
+				EB9E8CFE21E610B300D5DD03 /* Frameworks */,
+				EB9E8CFF21E610B300D5DD03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB9E8D0321E610B300D5DD03 /* PBXTargetDependency */,
+			);
+			name = PointCloudTests;
+			productName = PointCloudTests;
+			productReference = EB9E8D0121E610B300D5DD03 /* PointCloudTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB9E8CE321E610B100D5DD03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Lemming;
+				TargetAttributes = {
+					EB9E8CEA21E610B100D5DD03 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EB9E8D0021E610B300D5DD03 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EB9E8CEA21E610B100D5DD03;
+					};
+				};
+			};
+			buildConfigurationList = EB9E8CE621E610B100D5DD03 /* Build configuration list for PBXProject "PointCloud" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB9E8CE221E610B100D5DD03;
+			productRefGroup = EB9E8CEC21E610B100D5DD03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB9E8CEA21E610B100D5DD03 /* PointCloud */,
+				EB9E8D0021E610B300D5DD03 /* PointCloudTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB9E8CE921E610B100D5DD03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9E8CF121E610B100D5DD03 /* art.scnassets in Resources */,
+				EB9E8CFB21E610B200D5DD03 /* LaunchScreen.storyboard in Resources */,
+				EB9E8CF821E610B200D5DD03 /* Assets.xcassets in Resources */,
+				EB9E8CF621E610B100D5DD03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9E8CFF21E610B300D5DD03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB9E8CE721E610B100D5DD03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9E8CF321E610B100D5DD03 /* GameViewController.swift in Sources */,
+				EB9E8CEF21E610B100D5DD03 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9E8CFD21E610B300D5DD03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9E8D0621E610B300D5DD03 /* PointCloudTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB9E8D0321E610B300D5DD03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB9E8CEA21E610B100D5DD03 /* PointCloud */;
+			targetProxy = EB9E8D0221E610B300D5DD03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB9E8CF421E610B100D5DD03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB9E8CF521E610B100D5DD03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB9E8CF921E610B200D5DD03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB9E8CFA21E610B200D5DD03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB9E8D0821E610B300D5DD03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB9E8D0921E610B300D5DD03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB9E8D0B21E610B300D5DD03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PointCloud/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lemming.PointCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB9E8D0C21E610B300D5DD03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PointCloud/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lemming.PointCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB9E8D0E21E610B300D5DD03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PointCloudTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lemming.PointCloudTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PointCloud.app/PointCloud";
+			};
+			name = Debug;
+		};
+		EB9E8D0F21E610B300D5DD03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PointCloudTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lemming.PointCloudTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PointCloud.app/PointCloud";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB9E8CE621E610B100D5DD03 /* Build configuration list for PBXProject "PointCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9E8D0821E610B300D5DD03 /* Debug */,
+				EB9E8D0921E610B300D5DD03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB9E8D0A21E610B300D5DD03 /* Build configuration list for PBXNativeTarget "PointCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9E8D0B21E610B300D5DD03 /* Debug */,
+				EB9E8D0C21E610B300D5DD03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB9E8D0D21E610B300D5DD03 /* Build configuration list for PBXNativeTarget "PointCloudTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9E8D0E21E610B300D5DD03 /* Debug */,
+				EB9E8D0F21E610B300D5DD03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB9E8CE321E610B100D5DD03 /* Project object */;
+}
