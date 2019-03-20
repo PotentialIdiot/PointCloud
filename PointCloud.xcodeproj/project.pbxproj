@@ -14,6 +14,12 @@
 		EB9E8CF821E610B200D5DD03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9E8CF721E610B200D5DD03 /* Assets.xcassets */; };
 		EB9E8CFB21E610B200D5DD03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9E8CF921E610B200D5DD03 /* LaunchScreen.storyboard */; };
 		EB9E8D0621E610B300D5DD03 /* PointCloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9E8D0521E610B300D5DD03 /* PointCloudTests.swift */; };
+		EB9E8D1221E610F500D5DD03 /* PointCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9E8D1021E610F400D5DD03 /* PointCloud.swift */; };
+		EB9E8D1321E610F500D5DD03 /* PointCloudVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9E8D1121E610F400D5DD03 /* PointCloudVertex.swift */; };
+		EB9E8D1721E6110100D5DD03 /* bun_zipper_points.ply.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB9E8D1521E6110100D5DD03 /* bun_zipper_points.ply.txt */; };
+		EB9E8D1821E6110100D5DD03 /* dragon_hidden.ply.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB9E8D1621E6110100D5DD03 /* dragon_hidden.ply.txt */; };
+		EB9E8D1A21E6190100D5DD03 /* blackHoleParticlesImg.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9E8D1921E6190100D5DD03 /* blackHoleParticlesImg.png */; };
+		EB9E8D1C21E624B200D5DD03 /* Twinkle.shader in Resources */ = {isa = PBXBuildFile; fileRef = EB9E8D1B21E624B200D5DD03 /* Twinkle.shader */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		EB9E8D0121E610B300D5DD03 /* PointCloudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PointCloudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9E8D0521E610B300D5DD03 /* PointCloudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCloudTests.swift; sourceTree = "<group>"; };
 		EB9E8D0721E610B300D5DD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9E8D1021E610F400D5DD03 /* PointCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointCloud.swift; sourceTree = "<group>"; };
+		EB9E8D1121E610F400D5DD03 /* PointCloudVertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointCloudVertex.swift; sourceTree = "<group>"; };
+		EB9E8D1521E6110100D5DD03 /* bun_zipper_points.ply.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bun_zipper_points.ply.txt; sourceTree = "<group>"; };
+		EB9E8D1621E6110100D5DD03 /* dragon_hidden.ply.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dragon_hidden.ply.txt; sourceTree = "<group>"; };
+		EB9E8D1921E6190100D5DD03 /* blackHoleParticlesImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackHoleParticlesImg.png; sourceTree = "<group>"; };
+		EB9E8D1B21E624B200D5DD03 /* Twinkle.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Twinkle.shader; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +92,11 @@
 			isa = PBXGroup;
 			children = (
 				EB9E8CEE21E610B100D5DD03 /* AppDelegate.swift */,
+				EB9E8D1421E6110100D5DD03 /* Resources */,
 				EB9E8CF021E610B100D5DD03 /* art.scnassets */,
 				EB9E8CF221E610B100D5DD03 /* GameViewController.swift */,
+				EB9E8D1021E610F400D5DD03 /* PointCloud.swift */,
+				EB9E8D1121E610F400D5DD03 /* PointCloudVertex.swift */,
 				EB9E8CF421E610B100D5DD03 /* Main.storyboard */,
 				EB9E8CF721E610B200D5DD03 /* Assets.xcassets */,
 				EB9E8CF921E610B200D5DD03 /* LaunchScreen.storyboard */,
@@ -97,6 +112,17 @@
 				EB9E8D0721E610B300D5DD03 /* Info.plist */,
 			);
 			path = PointCloudTests;
+			sourceTree = "<group>";
+		};
+		EB9E8D1421E6110100D5DD03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB9E8D1521E6110100D5DD03 /* bun_zipper_points.ply.txt */,
+				EB9E8D1621E6110100D5DD03 /* dragon_hidden.ply.txt */,
+				EB9E8D1921E6190100D5DD03 /* blackHoleParticlesImg.png */,
+				EB9E8D1B21E624B200D5DD03 /* Twinkle.shader */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,9 +207,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB9E8CF121E610B100D5DD03 /* art.scnassets in Resources */,
+				EB9E8D1C21E624B200D5DD03 /* Twinkle.shader in Resources */,
 				EB9E8CFB21E610B200D5DD03 /* LaunchScreen.storyboard in Resources */,
+				EB9E8D1821E6110100D5DD03 /* dragon_hidden.ply.txt in Resources */,
+				EB9E8D1721E6110100D5DD03 /* bun_zipper_points.ply.txt in Resources */,
 				EB9E8CF821E610B200D5DD03 /* Assets.xcassets in Resources */,
 				EB9E8CF621E610B100D5DD03 /* Main.storyboard in Resources */,
+				EB9E8D1A21E6190100D5DD03 /* blackHoleParticlesImg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9E8D1321E610F500D5DD03 /* PointCloudVertex.swift in Sources */,
 				EB9E8CF321E610B100D5DD03 /* GameViewController.swift in Sources */,
+				EB9E8D1221E610F500D5DD03 /* PointCloud.swift in Sources */,
 				EB9E8CEF21E610B100D5DD03 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SGX7F298W;
 				INFOPLIST_FILE = PointCloud/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -382,6 +415,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SGX7F298W;
 				INFOPLIST_FILE = PointCloud/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
