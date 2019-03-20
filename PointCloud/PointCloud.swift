@@ -115,36 +115,40 @@ import SceneKit
         elements.minimumPointScreenSpaceRadius = 1.0
         elements.maximumPointScreenSpaceRadius = 100.0
         
-        let sphere = SCNSphere(radius: 1.0)
-        var count = 0
-        for source in sphere.sources {
-            print("\(count) - \(source)")
-            count += 1
-        }
+        //1. this block of commented code was the attempts to use own geometry from SCN
+//        let sphere = SCNSphere(radius: 1.0)
+//        var count = 0
+//        for source in sphere.sources {
+//            print("\(count) - \(source)")
+//            count += 1
+//        }
+//
+//        count = 0
+//        for element in sphere.elements {
+//            print("\(count) - \(element)")
+//            count += 1
+//        }
+//
+//        let element = sphere.elements[0]
+//        element.pointSize = 10.0
+//        element.minimumPointScreenSpaceRadius = 1.0
+//        element.maximumPointScreenSpaceRadius = 100.0
+//
+//        let elements2 = SCNGeometryElement(data: nil, primitiveType: .point, primitiveCount: elements.primitiveCount, bytesPerIndex: elements.bytesPerIndex)
+//        elements2.pointSize = 1.0
+//        elements2.minimumPointScreenSpaceRadius = 1.0
+//        elements2.maximumPointScreenSpaceRadius = 100.0
         
-        count = 0
-        for element in sphere.elements {
-            print("\(count) - \(element)")
-            count += 1
-        }
-        
-        let element = sphere.elements[0]
-        element.pointSize = 10.0
-        element.minimumPointScreenSpaceRadius = 1.0
-        element.maximumPointScreenSpaceRadius = 100.0
-
-        let elements2 = SCNGeometryElement(data: nil, primitiveType: .point, primitiveCount: elements.primitiveCount, bytesPerIndex: elements.bytesPerIndex)
-        elements2.pointSize = 1.0
-        elements2.minimumPointScreenSpaceRadius = 1.0
-        elements2.maximumPointScreenSpaceRadius = 100.0
-        
-        let pointsGeometry = SCNGeometry(sources: [sphere.sources[0]], elements: [element])
+//        let pointsGeometry = SCNGeometry(sources: [sphere.sources[0]], elements: [element])
+        let pointsGeometry = SCNGeometry(sources: [positionSource, colorSource], elements: [elements])
         let material = SCNMaterial()
         pointsGeometry.materials = [material]
         pointsGeometry.firstMaterial?.lightingModel = .constant
         pointsGeometry.firstMaterial?.diffuse.contents = UIColor.yellow//UIImage(named: "blackHoleParticlesImg.png")
         pointsGeometry.firstMaterial?.locksAmbientWithDiffuse = true
         
+        
+        //2. this block of commented code was the attempts to add own shader to each point cloud image
 //        let material2 = SCNMaterial()
 ////        material2.writesToDepthBuffer = false
 //        let url = Foundation.URL(fileURLWithPath: Bundle.main.path(forResource: "Twinkle", ofType: "shader", inDirectory: nil)!)
